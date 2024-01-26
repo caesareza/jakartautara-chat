@@ -1,9 +1,20 @@
-import { useState } from "react"
 import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+function Header() {
+  return (
+    <header className="App-header">
+      <div className="flex justify-between lg:items-center mb-5">
+        <div className="burger-container lg:hidden">Menu</div>
+        <h1 className="font-bold">JakartaUtaraChat 3.5</h1>
+        <button className="ml-auto border border-white rounded px-3">
+          Edit
+        </button>
+      </div>
+    </header>
+  )
+}
 
+function App() {
   return (
     <main className="relative flex h-full">
       <div className="flex-shrink-0 dark overflow-x-hidden bg-black invisible lg:visible">
@@ -20,12 +31,7 @@ function App() {
         </div>
       </div>
       <div className="w-full p-6 bg-slate-600 flex flex-col">
-        <div className="flex items-center mb-5">
-          <div className="font-bold">Chat Jakarta Pusat</div>
-          <button className="ml-auto border border-white rounded px-3">
-            Edit
-          </button>
-        </div>
+        <Header />
         <div className="w-full lg:w-[46rem] mx-auto h-full overflow-y-scroll space-y-5">
           <p>
             Cake dragée caramels danish tart marshmallow pastry halvah gummi
