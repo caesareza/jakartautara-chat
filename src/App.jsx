@@ -6,8 +6,8 @@ function App() {
 
   return (
     <main className="relative flex h-full">
-      <div className="flex-shrink-0 dark overflow-x-hidden bg-black">
-        <div className="h-full w-[260px] p-5 flex flex-col">
+      <div className="flex-shrink-0 dark overflow-x-hidden bg-black invisible lg:visible">
+        <div className="h-full w-0 lg:w-[260px] lg:p-5 flex flex-col">
           <div className="flex items-center">
             <div className="thumb w-[30px] h-[30px] rounded-full bg-white mr-2"></div>
             <div>New Chat</div>
@@ -26,7 +26,7 @@ function App() {
             Edit
           </button>
         </div>
-        <div className="w-[46rem] mx-auto h-full overflow-y-scroll space-y-5">
+        <div className="w-full lg:w-[46rem] mx-auto h-full overflow-y-scroll space-y-5">
           <p>
             Cake dragée caramels danish tart marshmallow pastry halvah gummi
             bears. Icing powder gummi bears oat cake jujubes. Carrot cake
@@ -76,7 +76,7 @@ function App() {
             bears jelly beans jujubes.
           </p>
         </div>
-        <div className="w-[48rem] mx-auto mt-auto border border-gray flex p-3 rounded-lg">
+        <div className="w-full lg:w-[48rem] mx-auto mt-auto border border-gray flex p-3 rounded-lg">
           <input
             className="bg-transparent w-full outline-none"
             placeholder="Message ..."
