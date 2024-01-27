@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
 html, body, #root{
-  @apply h-full bg-gray-900 text-white
+  @apply text-[#141414] h-full
 }
